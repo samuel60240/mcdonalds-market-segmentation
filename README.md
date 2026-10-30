@@ -14,6 +14,14 @@ Analisi delle percezioni dei consumatori sul brand McDonald's, svolta seguendo l
 | `VisitFrequency` | ordinale | frequenza di visita (da *Never* a *More than once a week*) |
 | `Gender` | binario | Female / Male |
 
+### Fonte
+
+Il dataset proviene da:
+
+> Dolnicar, S., Grün, B., Leisch, F. (2018). *Market Segmentation Analysis: Understanding It, Doing It, and Making It Useful*. Springer. https://doi.org/10.1007/978-981-10-8818-6
+
+ed è distribuito anche come `mcdonalds` nel pacchetto R [`MSA`](https://cran.r-project.org/package=MSA). Il file è incluso qui solo a scopo didattico.
+
 ## Pipeline
 
 1. **Data collection** – caricamento ed esplorazione
