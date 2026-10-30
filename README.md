@@ -50,6 +50,18 @@ ed è distribuito anche come `mcdonalds` nel pacchetto R [`MSA`](https://cran.r-
 ![Biplot PCA](figures/pca_biplot.png)
 ![Profilo dei segmenti](figures/segment_profile.png)
 
+## Conclusioni
+
+Il gradimento di McDonald's dipende soprattutto da come viene percepito il **gusto**. `yummy` e `tasty` sono gli attributi più correlati con `Like` (0.68 e 0.64), mentre `disgusting` lo è in senso opposto (−0.58). Le percezioni su prezzo e salubrità pesano molto meno. La PCA conferma questa struttura: il primo asse, quello che spiega più varianza, separa chi trova il cibo buono da chi lo trova disgustoso, e il prezzo compare solo sul secondo asse.
+
+Comodità e velocità sono riconosciute quasi da tutti (oltre il 90% dei rispondenti), quindi **non distinguono** chi apprezza il brand da chi non lo apprezza. Lo stesso vale per `fattening`: l'87% ritiene che il cibo faccia ingrassare, ma la metà del campione (il segmento dei *fan consapevoli*) lo apprezza comunque.
+
+La segmentazione individua un gruppo particolarmente interessante dal punto di vista commerciale: i **critici ma utilizzatori** (circa 29%). Considerano McDonald's comodo e veloce ma non gustoso. Frequentano il brand per praticità, senza esserne soddisfatti, e un miglioramento della percezione del gusto potrebbe spostarli verso un giudizio positivo. I **detrattori** veri e propri sono invece una minoranza (circa 8%), con giudizio negativo su quasi tutti gli aspetti e visite molto rare.
+
+Dal punto di vista predittivo, le sole percezioni permettono di stabilire se un cliente apprezza il brand con circa l'**85% di accuratezza**. Un modello lineare (regressione logistica) è sufficiente e leggermente migliore del kNN, segno che la relazione tra percezioni e gradimento è in gran parte lineare.
+
+**Limiti**: i segmenti di K-means non sono nettamente separati (silhouette ≈ 0.23), perché i dati binari non formano gruppi naturali; vanno letti come una partizione utile e non come categorie reali di clienti. Inoltre la frequenza di visita è fortemente correlata con il gradimento (0.69), ma è più probabilmente una sua conseguenza che una causa.
+
 ## Struttura
 
 ```
