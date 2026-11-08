@@ -1,6 +1,15 @@
 # Analisi del dataset McDonald's
 
-Analisi delle percezioni dei consumatori sul brand McDonald's, svolta seguendo la pipeline di data analysis del corso di **Fondamenti di Scienza dei Dati** (Università di Palermo).
+l progetto ha come obiettivo l’identificazione e la descrizione di gruppi omogenei di clienti sulla base delle
+valutazioni espresse riguardo alle caratteristiche dell’offerta McDonald’s. Attraverso il processo di segmentazione
+è possibile mettere in evidenza le somiglianze presenti all’interno di ciascun gruppo e le differenze tra i diversi
+segmenti, ottenendo una visione sintetica dei comportamenti e dei livelli di soddisfazione della clientela.
+La costruzione dei segmenti si basa su 11 variabili percettive binarie (da yummy a disgusting). Le variabili
+descrittive e comportamentali (Like, Age, Visit Frequency e Gender) non sono state incluse nella fase di clustering,
+ma considerate soltanto successivamente per l’analisi di profilazione post hoc. Tale scelta metodologica permette
+di evitare che la definizione dei gruppi dipenda direttamente dal gradimento o dalla frequenza di visita, rendendo
+possibile valutare in modo più neutrale l’eventuale relazione tra la percezione del prodotto, la fidelizzazione e la
+soddisfazione del cliente.
 
 ## Dataset
 
